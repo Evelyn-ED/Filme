@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class Filme {
+
+    private String titulo;
+    private String genero;
+    private String duracao;
+    
+    public Filme(){
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Qual o Título do filme que você vai assistir");
+        titulo = sc.nextLine();
+        
+        System.out.println("Qual o Gênero deste filme?");
+        genero = sc.next();
+        
+        System.out.println("Quanto tempo dura o filme?");
+        duracao = sc.nextLine();
+    }
+
+    public void setTitulo(String titulo){
+    this.titulo = titulo;
+    }
+
+    public void setGenero(String genero){
+        this.genero = genero;
+    }
+
+    public void setDuracao(String duracao){
+        this.duracao = genero;
+    }
+    
+    public void exibir(){
+        
+        System.out.println("O Título do Filme é: "+titulo+" ");
+        System.out.println("O Gênero do Filme é: "+genero+" ");
+        System.out.println("A duração do Filme é de: "+duracao+" ");
+    }
+   
+}
