@@ -1,0 +1,75 @@
+import java.util.Scanner;
+
+public class EntradaDeCinema {
+    
+    private String dataFilme;
+    private String horaFilme;
+    private String salaFilme;
+    private double valor;
+    private Filme filme;
+    
+    public EntradaDeCinema(){
+        
+        Scanner sc2 = new Scanner(System . in);
+        
+        System.out.println("Qual a data de exibição do Filme?");
+        dataFilme = sc2.nextLine();
+        
+        System.out.println("Qual a hora do Filme?");
+        horaFilme = sc2.nextLine();
+        
+        System.out.println("Qual a sala que o filme será exibido?");
+        salaFilme = sc2.next();
+        
+        System.out.println("Qual o valor do ingresso?");
+        valor = sc2.nextDouble();
+        
+        System.out.println("Qual o nome do filme que você irá assistir?");
+        filme = new Filme();
+    }
+    
+    public EntradaDeCinema (Filme filme){
+        this.filme = filme;
+        System.out.println("A data do Filme é "+dataFilme+" ");
+        System.out.println("A hora que você irá assistir o filme é: "+horaFilme+" ");
+        System.out.println("A sala de exibição do Filme é a "+salaFilme+" ");
+        System.out.println("O valor do ingresso é:"+valor+" reais");
+        System.out.println("" +filme+" foi o filme assistido!!! ");
+    }
+    
+    public void exibir(){
+        
+        this.filme = filme;
+        System.out.println("A data do Filme é "+dataFilme+" ");
+        System.out.println("A hora que você irá assistir o filme é: "+horaFilme+" ");
+        System.out.println("A sala de exibição do Filme é a "+salaFilme+" ");
+        System.out.println("O valor do ingresso é:"+valor+" reais");
+        System.out.println("" +filme+" foi o filme assistido!!! "); 
+    }
+    
+    public void mudarFilme(){
+           
+        Scanner sc3 = new Scanner(System . in);
+
+        System.out.println("Qual a data de exibição do novo Filme?");
+        String new_dataFilme = sc3.nextLine();
+        
+        System.out.println("Qual a hora do novo Filme?");
+        String New_horaFilme = sc3.nextLine();
+        
+        System.out.println("Qual a sala que o novo filme será exibido?");
+        String New_salaFilme = sc3.next();
+        
+        System.out.println("Qual o valor do novo ingresso?");
+        valor = sc3.nextDouble();
+        
+        System.out.println("Qual o nome do novo filme que você irá assistir?");
+        filme = new Filme();
+    }
+    
+    public void mudarFilme(Filme f){
+       filme = f;
+       System.out.println("O seu filme foi modificado!");
+    }
+    
+}
