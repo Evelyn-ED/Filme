@@ -1,0 +1,22 @@
+public class A_Main {
+    public static void main(String[] args) {
+
+        EntradaDeCinema entradaDeCinema1 = new EntradaDeCinema ();
+        EntradaDeCinema entradaDeCinema2 = new EntradaDeCinema();
+        EntradaDeCinema entradaDeCinema3 = new EntradaDeCinema();
+
+        entradaDeCinema1.exibir();
+        entradaDeCinema1.mudarFilme();
+        entradaDeCinema1.mudarFilme(null);
+
+        entradaDeCinema2.exibir();
+        entradaDeCinema2.mudarFilme();
+        entradaDeCinema2.mudarFilme(null);
+
+        entradaDeCinema3.exibir();
+        entradaDeCinema3.mudarFilme();
+        entradaDeCinema3.mudarFilme(null); 
+    }
+    
+
+}
